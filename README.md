@@ -40,3 +40,8 @@ Example below:
 	Download: 9.73 Mb/s
 	Upload:   2.89 Mb/s
 	$
+
+To Build for windows use the command:
+
+$ GOOS=windows GOARCH=386 go build main.go
+
