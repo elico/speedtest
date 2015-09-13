@@ -19,7 +19,7 @@ import (
 const (
 	tableFormat      = "simple"
 	maxFailureCount  = 3
-	initialTestCount = 5
+	initialTestCount = 25
 	basePingCount    = 5
 	fullTestCount    = 20
 )
@@ -186,7 +186,7 @@ func fullTest(server stdn.Testserver) error {
 }
 
 func autoGetTestServers(cfg *stdn.Config) ([]stdn.Testserver, error) {
-	//get the first 5 closest servers
+	//get the first closest servers by the variable "initialTestCount"
 	testServers := []stdn.Testserver{}
 	failures := 0
 	for i := range cfg.Servers {
