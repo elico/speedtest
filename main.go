@@ -119,6 +119,13 @@ func main() {
 			break //we are done
 		}
 	}
+	//Pausing to allow the windows to stay open
+        _, err = prompt.Basic("Enter \"quit\" to exit> ", true)
+        if err != nil {
+                fmt.Printf("input failure \"%v\"\n", err)
+                os.Exit(-1)
+        }
+
 }
 
 func testLatency(server stdn.Testserver) error {
