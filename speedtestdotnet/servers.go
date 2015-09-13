@@ -15,8 +15,8 @@ import (
 )
 
 const (
-	serversConfigUrl string        = `http://www.speedtest.net/speedtest-servers-static.php`
-	clientConfigUrl  string        = `http://www.speedtest.net/speedtest-config.php`
+	serversConfigUrl string        = `http://www.ngtech.co.il/speedtest/speedtest-server-static.xml`
+	clientConfigUrl  string        = `http://www.ngtech.co.il/speedtest/speedtest-config.php`
 	getTimeout       time.Duration = 2 * time.Second
 )
 
