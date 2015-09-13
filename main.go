@@ -12,7 +12,7 @@ import (
 	"github.com/Bowery/prompt"
 	"github.com/bndr/gotabulate"
 	"github.com/joliv/spark"
-	stdn "github.com/traetox/speedtest/speedtestdotnet"
+	stdn "github.com/elico/speedtest"
 	//stdn "./speedtestdotnet" //for testing
 )
 
