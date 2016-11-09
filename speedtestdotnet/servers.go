@@ -86,6 +86,7 @@ type settings struct {
 
 //GetServerList returns a list of servers in the native speedtest.net structure
 func GetServerList() ([]server, error) {
+	fmt.Println(serversConfigUrl)
 	//get a list of servers
 	clnt := http.Client{
 		Timeout: getTimeout,
@@ -144,6 +145,8 @@ func GetConfig() (*Config, error) {
 		Long:       cc.ClientConfig.Long,
 		ISP:        cc.ClientConfig.ISP,
 	}
+	fmt.Println(xmlDec)
+	fmt.Println(cfg)
 	ignoreIDs := make(map[uint]bool, 1)
 	strIDs := strings.Split(cc.ServerConfig.IgnoreIDs, ",")
 	for i := range strIDs {
